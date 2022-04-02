@@ -1,6 +1,29 @@
 export const templates = {
-    html5: {
-        html: `
+  default: {
+    langs: [
+      {
+        code: `
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <title></title>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link href="css/style.css" rel="stylesheet">
+                </head>
+                <body>
+                  <h1>Default</h1>
+                </body>
+            </html>
+        `
+      }
+    ]
+  },
+    
+  html5: {
+    langs: [
+      {
+        code: `
             <!DOCTYPE html>
             <html lang="en">
                 <head>
@@ -14,25 +37,38 @@ export const templates = {
                 </body>
             </html>
         `,
-        css: `
-            /* styles for gatsby */
-        `
-    },
+      },
 
-    header: {
-        html: `
+      {
+        code: `
+            /* styles for gatsby */
+        `,
+      },
+    ],
+  },
+
+  header: {
+    langs: [
+      {
+        code: `
             <header>
                 <h1>Hellow World!</h1>
             </header>
         `,
+      },
 
-        css: `
+      {
+        code: `
             /* styles for gatsby */
-        `
-    },
+        `,
+      },
+    ],
+  },
 
-    social_menu_layers: {
-        html: `
+  social_menu_layers: {
+    langs: [
+      {
+        code: `
             <div>
                 <i>Face</i>
                 <i>Face</i>
@@ -40,21 +76,31 @@ export const templates = {
                 <i>Face</i>
             </div>
         `,
+      },
 
-        css: `
+      {
+        code: `
             /* styles for gatsby */
-        `
-    },
+        `,
+      },
+    ],
+  },
 
-    loading_effect: {
-        html: `
+  loading_effect: {
+    langs: [
+      {
+        code: `
             <div>
                 <h4>Seila</h4>
             </div>
-        `, 
-        
-        css: `
+        `,
+      },
+
+      {
+        code: `
             /* styles for gatsby */
-        `
-    }
-};
+        `,
+      },
+    ],
+  },
+}

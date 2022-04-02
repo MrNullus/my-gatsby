@@ -1,25 +1,35 @@
-import { handleOption, renderFormRoot } from "./Controllers/functions.js";
-import { selectElement } from "./Components/Select.js";
-import { optionsFinally } from "./Components/Options.js";
-import { buttonElement } from "./Components/ButtonGenerate.js";
+//***---- Import Dependencies
+import SelectElement from "./Components/Select.js";
+import OptionsFinally from "./Components/Options.js";
+import ButtonGenerate  from './Components/ButtonGenerate.js';
+
+import { fadeOut, handleOption, renderFormRoot } from "./Controllers/functions.js";
+
 
 //***---- Get Elements and Data Initial
 const formRoot = document.getElementById("form-root");
-const select = selectElement();
-const optionElements = optionsFinally;
-const button = buttonElement();
+const select = SelectElement();
+const optionElements = OptionsFinally;
+const button = ButtonGenerate()
 
-renderFormRoot(formRoot, select, optionElements, button);
 
+//***---- Initialize loader
+window.onload = fadeOut();
+
+
+//***---- Event for render form root
+renderFormRoot(formRoot, select, optionElements, button)
+
+
+//***---- Set vars
 const preview = document.getElementById("root");
 const selectTemplateEl = document.querySelector("#selectTemplate");
 const btnTemplate = document.getElementById("btn-get-template");
 
 let optionTemplate;
 
-//***---- Events
-//*** Event from render form root
 
+//***---- Event for button generate gatsby
 btnTemplate.addEventListener("click", function() {
     var option = selectTemplateEl.value;
 

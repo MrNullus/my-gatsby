@@ -1,9 +1,11 @@
-export const buttonElement = () => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.classList.add("btn", "btn-template");
-    button.setAttribute("id", "btn-get-template")
-    button.textContent = "Gerar meu Gatsby!";
+const ButtonGenerate = () => {
+  const button = document.createElement('button')
+  button.type = 'button'
+  button.classList.add('btn', 'form__btn-get-gatsby')
+  button.setAttribute('id', 'btn-get-template')
+  button.textContent = 'Gerar meu Gatsby!'
 
-    return button;
+  return button;
 }
+
+export default ButtonGenerate;
