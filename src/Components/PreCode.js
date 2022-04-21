@@ -30,7 +30,7 @@ const PreCode = (codeBlock) => {
         navigator.clipboard.writeText(textArea.textContent);
 
         console.log(textArea.textContent);
-        //   alert('CTRL + C !!!');
+        alert('Copiado!!!');
     });
 
     return div;

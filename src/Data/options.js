@@ -1,3 +1,6 @@
+/* 
+    * All 'options' for the component Select *
+*/
 export const options = [
     {
         value: "default",
@@ -8,8 +11,8 @@ export const options = [
         content: "HTML5"
     },
     {
-        value: "header",
-        content: "Header"
+        value: "navbar_type_1",
+        content: "Navbar Type 1"
     },
     {
         value: "social_menu_layers",

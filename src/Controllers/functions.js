@@ -22,7 +22,7 @@ export function handleOption(opt, optTemp, root) {
 }
 
 export function checkWhichTemplate(optTemp) {
-    CHECKED_TEMPLATE = templates[optTemp].langs
+    CHECKED_TEMPLATE = templates[optTemp].langs;
 
     return CHECKED_TEMPLATE;
 }
@@ -30,12 +30,12 @@ export function checkWhichTemplate(optTemp) {
 export function renderTemplate(root, templateChecked) {
     root.innerHTML = "";
 
-    const temp = templateChecked;
+    // const temp = templateChecked;
 
     for (const key in CHECKED_TEMPLATE) {
         let codeBlock = CHECKED_TEMPLATE[key].code;
 
-        root.appendChild(PreCode(codeBlock))
+        root.appendChild(PreCode(codeBlock));
     }
 }
 
